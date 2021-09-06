@@ -1,0 +1,489 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 25px;
+    background: #f5f3dd;
+}
+
+div, section,header,footer,nav, ul{
+    box-sizing: border-box;  
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+#section-1{
+    background-image: url(../images/header-banner.jpg);
+}
+
+#section-2{
+    background-image: url(../images/banner1.jpg);
+}
+
+#sectio-3{
+    background-image: url(../images/banner2.jpg);
+}
+
+#section-4{
+    background-image: url(../images/banner3.jpg)
+}
+
+#section-5{
+    background-image: url(../images/banner4.jpg)
+}
+
+nav{
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    width: 18px;
+}
+
+nav a{
+    width: 16px;
+    height: 16px;
+    background: white;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    position: relative;
+}
+
+nav .caption{
+    display: none;
+    background: black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+nav a:hover .caption{
+    display: block;
+}
+
+.layer{
+    height: 500px;
+    max-width: 100%;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 5%;
+    
+      
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1160px;
+}
+
+section::after{
+    content: "";
+    clear: both;
+    display: table;
+   
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+    margin: 0;
+}
+
+h3{
+    color: blueviolet;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+}
+
+#section-1 .skew-neg{
+    margin: 100px 0 0 20%;
+    border-left: 5px solid white;
+}
+
+.skew-neg{
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    border-right: 5px solid black;   
+    border-left: 5px solid black;
+}
+
+.skew-pos{
+    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+}
+
+#section-1 .title{
+    padding-left: 30px; 
+}
+
+.h3{
+    float: left;
+    width: 30%;
+    font-size: 32px;
+}
+
+.excerpt{
+    float: left;
+    width: 70%;
+    padding-left: 50px;
+}
+
+.row{
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+#about-me .img{
+    float: left;
+    width: 25%
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+        
+}
+
+section .col{
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+    
+}
+
+section .col p{
+    margin: 0 0 20px 0;
+}
+
+
+#about-me .box{
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 10px;
+    min-width: 160px;
+}
+
+#about-me .box:first-child{
+    margin-left: 0;
+}
+
+#about-me .box .header{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+#about-me .box .value{
+    padding: 10px;
+}
+
+#about-me .row-boxes ,#projects .row-projects{
+    width: 100%;
+    text-align: center;
+}
+
+#about-me .box-wrapper , #projects .projects-wrapper{
+    display: inline-block;
+}
+
+.timeline {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline::before{
+    content: '';
+    width: 2px;
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.timeline .experience{
+    width: 40%;
+}
+
+.timeline .experience:nth-child(even){
+    float: right;
+    width: 40%;
+    padding-left: 60%;
+}
+
+.timeline .experience:nth-child(even) .timeline-body{
+    border-left: none;
+   
+}
+
+.timeline .experience:nth-child(odd) .timeline-body{
+    
+    border-right: none;
+}
+
+.timeline .experience:nth-child(odd){
+    float: left;
+    width: 40%;
+    padding-right: 60%;
+}
+
+.timeline .experience .timeline-heading{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+   
+
+.timeline .experience .timeline-body{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.timeline .experience .bullet{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    background: #f5f3dd;
+}
+
+.timeline .start-bullet{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top: -40px;
+    font-size: 18px;
+    
+}
+
+.timeline .start-bullet .skew-neg{
+    display: inline-block;
+    padding: 0 20px;
+    background: black;
+    color: white;
+    
+}
+
+.skill{
+    float: left;
+    width: 16.66666667%;
+        
+}
+
+.skill .pie{
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    margin: 0 auto 10px;
+    
+    
+}
+
+/* 5% = 80%-75% = 360 * 0.05 = 18 deg */
+
+.skill .pie-80{
+    background-image: linear-gradient(18deg, black 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+/* -5% = 70% - 75% = 360 * 0.05 = -18deg */
+.skill .pie-70{
+    background-image: linear-gradient(-18deg, black 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+/* 10% = 35% - 25% = 360 * 0.1 = 36deg */
+.skill .pie-35{
+    background-image: linear-gradient(36deg, #f5f3dd 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+/* 10% = 35% - 25% = 360 * 0.1 = 36deg */
+.skill .pie-35{
+    background-image: linear-gradient(36deg, #f5f3dd 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+/* 20% = 95% - 75% = 360 * 0.2 = 72deg */
+.skill .pie-95{
+    background-image: linear-gradient(72deg, black 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+/* 15% = 95% - 75% = 360 * 0.15 = 54deg */
+.skill .pie-90{
+    background-image: linear-gradient(54deg, #f5f3dd 50%, transparent 50%) , linear-gradient(90deg, #f5f3dd 50% ,transparent 50%);
+}
+
+.skill .heading{
+    text-align: center;
+    font-size: 18px;
+}
+
+#projects .h3, #testimonials .h3 {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    
+}
+
+#projects .h3 .skew-neg ,#testimonials .h3 .skew-neg{
+    display: inline-block;
+}
+
+.project{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.project .caption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.project .name{
+    font-weight: bold;
+    
+}
+
+.project .tech{
+    font-style: italic;
+}
+
+#testimonials .name{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#testimonials .quote{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/*Large Devices, Wide Screens */
+@media only screen and ( max-width : 1200px){
+    #projects .projects-wrapper{
+        width: 840px;
+    }
+    
+} 
+
+/* Medium devices (landscape phones, 576px and up) , */
+@media only screen and (max-width : 992px){
+    #section-1 .skew-neg{
+        margin: 100px 0 0 10%;
+    }
+    
+    .skill{
+        width: 33.33%;
+        margin-bottom: 20px;
+            
+    }
+    
+    #projects .projects-wrapper{
+        width: 560px;
+    }
+} 
+
+/* Small devices (tablets, 768px and up)*/
+@media only screen and (max-width : 768px){
+    h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+    .h3{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .h3 .skew-neg{
+        display: inline-block;
+    }
+    
+    .excerpt , #about-me .col{
+        width: 100%;
+        padding: 0;
+            
+    }
+    
+    #about-me .img{
+        width: 100%;
+        margin-bottom: 20px;
+            
+    }
+    
+    #about-me img{
+        width: 100%;
+    }
+    
+    .box-wrapper{
+        width: 540px;
+        
+    }
+    
+    #about-me .box:first-child{
+        margin-left: 10px;
+    }
+    
+    #about-me .box{
+        margin: 0 10px 20px;
+    }
+} 
+/*Special for item-box iphone4 , iphone 5 Potrait , landscape*/
+@media only screen and (max-width: 667px){
+    h1{
+        font-size: 34px;
+        line-height: 34px;
+    }
+    
+    .box-wrapper{
+        width: 360px;
+    }
+    
+    .skill{
+        width: 50%;
+    }
+    
+    #projects .projects-wrapper{
+        width: 280px;
+    }
+    
+    
+} 
+
+
+/* Extra Small devices (desktops, 992px and up),Phone*/
+@media only screen and (max-width: 480px){
+    
+} 
+/* Custom, iPhone Retina*/
+@media only screen and (max-width: 320px){
+    
+} 
